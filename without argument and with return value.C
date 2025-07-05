@@ -1,0 +1,25 @@
+without argument and with return value 
+
+
+
+
+#include <stdio.h>
+
+int sum(int, int);
+
+int main() {
+    int a, b, result;
+
+    printf("\nGoing to calculate the sum of two numbers: ");
+    printf("\nEnter two numbers: ");
+    scanf("%d,%d", &a, &b);
+
+    result = sum(a, b);
+
+    printf("\nThe sum is: %d", result);
+    return 0;
+}
+
+int sum(int a, int b) {
+    return a + b;
+}
